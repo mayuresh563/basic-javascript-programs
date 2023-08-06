@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <script>
+        // 1. search()
+        var re = /apples/gi;
+        var str = "Apples are round, and apples are juicy.";
+        if(str.search(re) == -1){
+            document.write("Does not contain Apples");
+        }else{
+            document.write("Contain Apples")
+        }
+        // 2. slice()
+        var sliced = str.slice(3, -2);
+        document.write("<br />", sliced);
+
+        // 3. split()
+        var splitted = str.split(" ",3);
+        document.write("<br />", splitted);
+        
+        // 4. substr()
+        document.write("<br />(1,2): " + str.substr(1,2));
+        document.write("<br />(-2,2): " + str.substr(-2,2));
+        document.write("<br />(1): " + str.substr(1));
+        document.write("<br />(-20,2): " + str.substr(-20,2));
+        document.write("<br />(20,2): " + str.substr(20,2));
+
+        // 5. toLocaleLowerCase()
+        document.write("<br />",str.toLocaleLowerCase());
+
+
+        // 6. toLocaleUpperCase()
+        document.write("<br />",str.toLocaleUpperCase());
+
+    </script>
+</body>
+</html>

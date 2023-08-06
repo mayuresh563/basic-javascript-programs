@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text </title>
+</head>
+<body>
+    <script>
+        //  str.anchor()
+        var str = new String("Hello World");
+        document.write(str.anchor("myanchor"));
+
+        //  str.big()
+        document.write("<br/>",str.big());
+        
+        //  str.small()
+        document.write("<br/>",str.small());
+
+        //  str.blink()
+        document.write("<br/>",str.blink());
+
+        //  str.bold()
+        document.write("<br/>",str.bold());
+
+        //  str.fixed()
+        document.write("<br/>",str.fixed());
+        
+        //  str.fontcolor()
+        document.write("<br/>",str.fontcolor("red"));
+
+        //  str.fontsize()
+        document.write("<br/>",str.fontsize(5));
+
+        //  str.italics()
+        document.write("<br/>",str.italics());
+
+        //  str.link()
+        var URL = "https://www.youtube.com/channel/UCltUqMR-ZveAMVYb_XcCNNg/featured";
+        document.write("<br/>",str.link(URL));
+
+        //  str.strike()
+        document.write("<br/>",str.strike());
+
+        //  str.sub()
+        document.write("<br/>Hi");
+        document.write(str.sub());
+        
+        //  str.sup()
+        document.write("<br/>Hi");
+        document.write(str.sup());
+    </script>
+</body>
+</html>

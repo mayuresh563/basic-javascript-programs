@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expression</title>
+</head>
+<body>
+    <p>The following is the example of Regular Expression global Property</p>
+    <script>
+        var re = new RegExp("string");
+
+        if (re.global){
+            document.write("<br/>T1 - Global Property is set");
+        }else{
+            document.write("<br/>T1 - Global Property is not set");
+        }
+        re = new RegExp("string", "g");
+
+        if (re.global){
+            document.write("<br/>T2 - Global Property is set");
+        }else{
+            document.write("<br/>T2 - Global Property is not set");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ignore Case</title>
+</head>
+<body>
+    <script>
+        var re = new RegExp("string");
+        if(re.ignoreCase){
+            document.write("T1 - ignoreCase property is set");
+        }else{
+            document.write("T1 - ignoreCase property is not set");
+        }
+        re = new RegExp("string", "i");
+        if (re.ignoreCase){
+            document.write("<br/>T2 - ignoreCase property is set");
+        }else{
+            document.write("<br/>T2 - ignoreCase property is not set");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+</head>
+<body>
+    <script>
+        // 1. localeCompare() 
+        var str1 = new String("This is beautiful string");
+        var index = str1.localeCompare("XYZ")
+        document.write("localeCompare first : " + index);
+        var index = str1.localeCompare("AbCD")
+        document.write("<br />localeCompare second : " + index);
+        
+        // 2. match()
+        var str = "For more information , see Chapter 3.4.5.1";
+        var re = /(chapter \d+(\.\d)*)/i;
+        var found = str.match(re);
+        document.write(found);
+
+        // 3. replace()
+        var regex = /apples/gi;
+        var str1 = "Apples are round, and apples are juicy.";
+        var newstr = str1.replace(regex, "oranges");
+        documen.write(newstr);
+
+        // 4. replace() 
+        var rex = /(\w+)\s(\w+)/;
+        var str2 = "mayuresh tiwari";
+        var newstr1 = str2.replace(rex, $2, $1);
+        document.write(newstr1);
+    </script>
+</body>
+</html>
